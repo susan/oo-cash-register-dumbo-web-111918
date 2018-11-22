@@ -22,7 +22,7 @@ end
 
 
   def apply_discount
-    discount = (self.employee_discount/100.0
+    discount = (self.employee_discount/100.0)
     quantity = quantity ||= 1
     item_discounted = self.add_item(title, price) * (1 - discount)
     #binding.pry
