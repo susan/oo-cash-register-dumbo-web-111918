@@ -32,6 +32,7 @@ end
 LIST = []
 
   def items
+  add_items(title, price, quantity = 1)
   LIST << @title
   LIST
 end
