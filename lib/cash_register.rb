@@ -17,7 +17,7 @@ class CashRegister
     if quantity != 0
       self.total=(self.total + price*quantity)
     end
-  end    
+  end
 
 end
 #cash_register = CashRegister.new
