@@ -29,11 +29,11 @@ end
     end
   end
 
-@list = []
+LIST = []
 
   def items
-  @list << @title
-  @list
+  LIST << @title
+  LIST
 end
 
   def void_last_transaction
