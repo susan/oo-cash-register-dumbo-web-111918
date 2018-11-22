@@ -17,7 +17,7 @@ class CashRegister
       if quantity == nil
          quantity = 1
       end
-        item_subtotal = price * quantity
+        item_subtotal = price * quantity[0]
         self.total=(self.total + item_subtotal)
       #binding.pry
       
