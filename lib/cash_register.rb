@@ -14,6 +14,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
+
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
 
@@ -23,7 +24,7 @@ class CashRegister
 
   def apply_discount
     discount = (self.employee_discount/100.0)
-    item_discounted = self.add_item(title, price, quantity) * (1 - discount)
+    item_discounted = self.add_item(title, price, quantity ==1) * (1 - discount)
     #binding.pry
   end
 end
