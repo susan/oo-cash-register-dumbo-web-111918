@@ -13,7 +13,7 @@ class CashRegister
     @employee_discount
   end
 
-  def add_item(title, price, *quantity = nil)
+  def add_item(title, price, *quantity)
       self.total=(self.total + price)
 
   end
