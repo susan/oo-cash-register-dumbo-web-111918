@@ -7,6 +7,5 @@ class CashRegister
     @total = total
   end
 end
-binding.pry
-
 kroger = CashRegister.new
+binding.pry
