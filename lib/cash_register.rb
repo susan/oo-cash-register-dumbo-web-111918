@@ -19,14 +19,14 @@ class CashRegister
       end
         item_subtotal = price * quantity[0].to_f
         self.total=(self.total + item_subtotal)
-      binding.pry
+      #binding.pry
 
   end
 
   def apply_discount
     discount = (self.employee_discount/100.0)
     item_discounted = self.add_item(title, price) * (1 - discount)
-    #binding.pry
+    binding.pry
   end
 end
 cash_register = CashRegister.new
