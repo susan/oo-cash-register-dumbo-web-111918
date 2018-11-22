@@ -30,7 +30,7 @@ end
   end
 
 list = []
-  
+
   def items(title)
   list << @title
   list
