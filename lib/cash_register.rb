@@ -29,10 +29,9 @@ end
   def void_last_transaction
     self.total(self.total - add_item)
   end
-  
+
 end
 cash_register = CashRegister.new
 cash_register = cash_register.discount
 #sum = cash_register.apply_discount
 #binding.pry
-
