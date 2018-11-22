@@ -23,14 +23,14 @@ end
   def apply_discount
     if !employee_discount
       puts "theere is no discount"
-    else  
+    else
       discount = (self.employee_discount/100.0)
       item_discounted = self.add_item(title, price) * (1 - discount)
     end
   end
 
   def void_last_transaction
-    self.total(self.total - add_item(title, price, quantity = 1))
+    self.total=(self.total - add_item(title, price, quantity = 1))
   end
 
 end
