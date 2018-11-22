@@ -20,7 +20,7 @@ class CashRegister
 end
       #binding.pry
 
-  end
+  
 
   def apply_discount
     discount = (self.employee_discount/100.0)
