@@ -18,7 +18,7 @@ class CashRegister
       #    quantity = quantity << 1
       # end
       quantity = quantity.compact
-        item_subtotal = price * quantity[0]
+        item_subtotal = price.to_f * quantity[0]
         self.total=(self.total + item_subtotal)
       #binding.pry
 
