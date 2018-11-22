@@ -1,7 +1,7 @@
 
 require 'pry'
 class CashRegister
-  attr_accessor :total, :employee_discount, :title, :price, :quantity  
+  attr_accessor :total, :employee_discount, :title, :price, :quantity
 
   def initialize(total = 0, *employee_discount)
     @total = total
@@ -14,7 +14,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-   @quantity = quantity
+   @quantity ||= 1
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
 end
