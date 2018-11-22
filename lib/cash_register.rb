@@ -38,8 +38,8 @@ end
 
   def items
     @list
-  end  
-  
+  end
+
 
   def void_last_transaction
     self.total=(self.total - add_item(title, price, quantity = 1))
