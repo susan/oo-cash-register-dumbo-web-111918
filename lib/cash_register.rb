@@ -16,6 +16,7 @@ class CashRegister
   def add_item(title, price, *quantity)
       if quantity[0] == nil
        quantity[0] = 1
+       quantity.compact
      end
 
         item_subtotal = price * quantity[0]
