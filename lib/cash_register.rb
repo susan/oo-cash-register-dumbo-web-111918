@@ -8,3 +8,5 @@ class CashRegister
   end
 end
 binding.pry
+
+kroger = CashRegister.new
