@@ -19,7 +19,7 @@ class CashRegister
   end
 
   def apply_discount
-    self.total=(self.total.to_f * (100 - self.employee_discount)/100)
+    self.total=((self.total.to_f * (100 - self.employee_discount)/100)).round
   end
 end
 #cash_register = CashRegister.new
