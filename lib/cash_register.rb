@@ -29,6 +29,13 @@ end
     end
   end
 
+list = []
+  
+  def items(title)
+  list << @title
+  list
+end
+
   def void_last_transaction
     self.total=(self.total - add_item(title, price, quantity = 1))
   end
