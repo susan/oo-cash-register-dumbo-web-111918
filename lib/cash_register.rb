@@ -31,7 +31,7 @@ end
 
 list = []
 
-  def items(title)
+  def items
   list << @title
   list
 end
