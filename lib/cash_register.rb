@@ -7,10 +7,12 @@ class CashRegister
     @total = total
     @employee_discount = employee_discount
   end
+  
   def discount
     @employee_discount
   end
+
 end
-cash_register = CashRegister.new
-cash_register_with_discount = cash_register.discount
+#cash_register = CashRegister.new
+#cash_register_with_discount = cash_register.discount
 #binding.pry
