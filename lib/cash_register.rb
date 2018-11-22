@@ -7,6 +7,9 @@ class CashRegister
     @total = total
     @employee_discount = employee_discount
     @employee_discount = 20
+    @list = list
+    @list = []
+
   end
 
   def discount
@@ -17,24 +20,23 @@ class CashRegister
 
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
+    @list << title
 end
       #binding.pry
 
   def apply_discount
     if !employee_discount
-      puts "theere is no discount"
+      puts "There is no discount"
     else
       discount = (self.employee_discount/100.0)
       item_discounted = self.add_item(title, price) * (1 - discount)
     end
   end
 
-LIST = []
+
 
   def items
-  add_items(title, price, quantity = 1)
-  LIST << @title
-  LIST
+  @list
 end
 
   def void_last_transaction
