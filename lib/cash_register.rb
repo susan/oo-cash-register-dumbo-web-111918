@@ -19,7 +19,7 @@ class CashRegister
       #binding.pry
   end
 
-  def apply_discount
+  def apply_discount(title, price, quantity)
     discount = (self.employee_discount/100.0)
     item_discounted = self.add_item(title, price, quantity) * (1 - discount)
     #binding.pry
