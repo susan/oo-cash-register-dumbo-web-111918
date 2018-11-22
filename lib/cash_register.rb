@@ -20,7 +20,7 @@ class CashRegister
      @list << title(quantity)
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
-    
+
     @list
 end
       #binding.pry
