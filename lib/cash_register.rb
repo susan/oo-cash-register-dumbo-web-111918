@@ -17,10 +17,10 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-
+     @list << title(quantity)
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
-    @list << title * quantity.join(", ")
+    
     @list
 end
       #binding.pry
