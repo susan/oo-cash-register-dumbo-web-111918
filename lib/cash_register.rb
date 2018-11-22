@@ -13,7 +13,7 @@ class CashRegister
     @employee_discount
   end
 
-  def add_item(title, price, *quantity = 1)
+  def add_item(title, price, quantity = 1)
       item_subtotal = price * quantity[0].to_f
       self.total=(self.total + item_subtotal)
     end
