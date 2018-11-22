@@ -8,4 +8,4 @@ class CashRegister
   end
 end
 kroger = CashRegister.new
-binding.pry
+#binding.pry
