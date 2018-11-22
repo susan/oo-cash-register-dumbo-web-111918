@@ -17,7 +17,7 @@ class CashRegister
     if quantity != nil
       item_subtotal = (price * quantity[0]).float
       self.total=(self.total + item_subtotal)
-    end 
+    end
   end
 
 end
