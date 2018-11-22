@@ -13,12 +13,12 @@ class CashRegister
     @employee_discount
   end
 
-  def add_item(title, price, quantity)
-      if quantity == nil
-       return 1
+  def add_item(title, price, *quantity)
+      if quantity[0] == nil
+       quantity[0] = 1
      end
 
-        item_subtotal = price * quantity
+        item_subtotal = price * quantity[0]
         self.total=(self.total + item_subtotal)
       #binding.pry
 
