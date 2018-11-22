@@ -21,7 +21,7 @@ class CashRegister
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
 
-    @list.join(sep=$,) 
+    @list.join(sep=$,)
 end
       #binding.pry
 
