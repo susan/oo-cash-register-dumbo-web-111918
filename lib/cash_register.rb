@@ -8,9 +8,9 @@ class CashRegister
     @employee_discount = employee_discount
   end
 
-  def discount
-    @employee_discount
-  end
+  # def discount
+  #   @employee_discount
+  # end
 
 end
 #cash_register = CashRegister.new
