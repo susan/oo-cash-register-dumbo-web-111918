@@ -13,7 +13,7 @@ class CashRegister
     @employee_discount
   end
 QUANTITY = 1
-  def add_item(title, price, *QUANTITY)
+  def add_item(title, price, QUANTITY)
       # if quantity == nil
       #    quantity = quantity << 1
       # end
