@@ -17,11 +17,11 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-     
+
     item_subtotal = price * quantity
     self.total=(self.total + item_subtotal)
 
-    
+
 end
       #binding.pry
 
@@ -38,7 +38,7 @@ end
 
   def items
     @list.flat_map { |item| [item] * quantity}
-    
+
   
 
   def void_last_transaction
