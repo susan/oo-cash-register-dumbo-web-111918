@@ -9,7 +9,7 @@ class CashRegister
   end
   def discount
     @employee_discount
-  end  
+  end
 end
 cash_register = CashRegister.new
 cash_register_with_discount = cash_register.discount
