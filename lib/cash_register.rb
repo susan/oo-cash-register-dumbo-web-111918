@@ -18,7 +18,7 @@ class CashRegister
        quantity[0] = 1
         item_subtotal = price * quantity[0]
         self.total=(self.total + item_subtotal)
-      else 
+      else
         item_subtotal = price * quantity[0]
         self.total=(self.total + item_subtotal)
       end
