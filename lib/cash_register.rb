@@ -13,9 +13,9 @@ class CashRegister
     @employee_discount
   end
 
-  def add_item(title, price, *quantity)
+  def add_item(title, price)
     if quantity != 0
-      self.total=(self.total + price*quantity)
+      self.total=(self.total + price)
     end
   end
 
