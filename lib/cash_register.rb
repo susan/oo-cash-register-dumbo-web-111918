@@ -14,7 +14,7 @@ class CashRegister
   end
 
   def add_item(title, price, *quantity)
-      if quantity = nil
+      if quantity == nil
         item_subtotal = 0.0
       else
         item_subtotal = price * quantity.to_f
