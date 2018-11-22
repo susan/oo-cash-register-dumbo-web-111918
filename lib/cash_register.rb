@@ -13,7 +13,7 @@ class CashRegister
     @employee_discount
   end
 
-  def add_item(title, price, quantity)
+  def add_item(title, price, *quantity)
       if quantity = nil
         item_subtotal = 0
       else
