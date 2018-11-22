@@ -13,6 +13,10 @@ class CashRegister
     @employee_discount
   end
 
+  def add_item(title, price)
+    self.total=(self.total + price)
+  end  
+
 end
 #cash_register = CashRegister.new
 #cash_register_with_discount = cash_register.discount
