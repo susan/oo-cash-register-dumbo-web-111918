@@ -12,13 +12,13 @@ class CashRegister
   def discount
     @employee_discount
   end
-
-  def add_item(title, price, *quantity = 1)
+QUANTITY = 1
+  def add_item(title, price, *QUANTITY)
       # if quantity == nil
       #    quantity = quantity << 1
       # end
-      quantity = quantity.compact
-        item_subtotal = price.to_f * quantity[0]
+
+        item_subtotal = price * quantity
         self.total=(self.total + item_subtotal)
       #binding.pry
 
