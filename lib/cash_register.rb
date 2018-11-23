@@ -28,7 +28,7 @@ class CashRegister
       puts "There is no discount"
     else
       discount = (self.employee_discount/100.0)
-      item_discounted = self.add_item(title, price) * (1 - discount)
+      item_discounted = self.add_item(title, price, *quantity) * (1 - discount)
     end
   end
 
